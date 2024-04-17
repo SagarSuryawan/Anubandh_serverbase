@@ -1,0 +1,324 @@
+.tenor-sans-regular {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body {
+    font-family: 'Tenor Sans', sans-serif;
+}
+/* floating bar */
+.floating-bar {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: 50%; /* Adjust to position vertically */
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #F8C3D9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px 0;
+    /* width: 200px; Adjust width as needed */
+    /* border-left: 2px solid #333; Optional: Add a border for visual distinction */
+}
+.contact-info{
+    padding-left: 10px;
+}
+
+
+/* Optional: Add some styles to make the floating bar more visible */
+.floating-bar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensrgba(14, 13, 13, 0.1)s above other content */
+}
+
+/* Optional: Add some styles to make the floating bar more visible */
+.floating-bar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the bar appears above other content */
+}
+   /* Navbar container */
+   .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #F8C3D9;
+    padding: 10px;
+    color: #fff;
+    position: sticky;
+    top: 100;
+    position: fixed; /* Fix the navbar to the top */
+    width: 100%; /* Take the full width of the viewport */
+    top: 0; /* Stick the navbar at the top of the viewport */
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+    /* border: 1px solid black;*/
+
+}
+
+/* Logo */
+.navbar img {
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 200px;
+}
+
+/* Menu items */
+.menu {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    /* border: 1px solid black; */
+    height: 35px;
+   
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s, text-decoration 0.3s, font-size 0.3s;
+}
+
+.menu li a:hover {
+    color: #AB2023;
+    text-decoration: underline;
+    font-size: 25px;
+}
+/* main part 1*/
+.flippable-div {
+    width: 100%;
+    height: 500px;
+    perspective: 1000px;
+    cursor: pointer;
+    /* margin: 20px; */
+    /* border: 1px solid red; */
+}
+/* main */
+.flippable-div .front,
+.flippable-div .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 1.6s;
+}
+.flippable-div .front>p,
+.flippable-div .back>p{
+    line-height: 30px;
+    width: 80%;
+    /* color: #29034d; */
+    color: rgb(65, 5, 15);
+    font-weight: 600;
+    
+}
+
+.flippable-div .front {
+    background: url('../media/home/back_flipped_home.jpg') center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(236, 226, 226);
+    transform: rotateY(0deg); /* Added */
+    width: 100%;
+    height: 100%;
+}
+.flippable-div .back {
+    background: url('../media/home/front_flipped_home.jpg') center center / cover;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.flippable-div.flipped .front {
+    transform: rotateY(-180deg); /* Added */
+}
+
+.flippable-div.flipped .back {
+    transform: rotateY(0deg); /* Added */
+}
+
+/* main part 2 */
+.short_intro{
+    line-height: 30px;
+    width: 80%;
+    color: #03044d;
+    font-weight: 600;
+    margin: auto;
+}
+.event{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.event>h1{
+    color: #AB2023;
+}
+.event >p{
+    line-height: 30px;
+    width: 80%;
+    color: #03044d;
+    font-weight: 600;
+    margin: auto;
+}
+
+.eventFunction{
+    /* background-image: url('https://images.pexels.com/photos/11285444/pexels-photo-11285444.png?auto=compress&cs=tinysrgb&w=600'); */
+    margin-top: 4%;
+    /* border: 1px solid red;. */
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    grid-template-rows: auto auto; /* 2 rows with height determined by content */
+    gap: 10px; /* Gap between grid items */
+}
+
+.eventFunction>div img{
+width: 70%;
+border-radius: 5%;
+transition: width 0.3s;
+}
+
+.eventFunction>div img:hover{
+    width: 80%;
+}
+
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+     background-color: #F8C3D9;;
+    padding: 10px;
+    color: black;
+    position: sticky;
+}
+#footerLogo>img{
+    cursor: pointer;
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* border: 1px solid blue; */
+    
+}
+.addressdiv>p{
+    font-weight: 800;
+}
+
+.addressdiv{
+    line-height: 30px;
+    cursor: pointer;
+
+}
+.addressdiv>p>a{
+    text-decoration: none;
+    color: black;
+}
+.quickLink p{
+    /* border: 1px solid yellow; */
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+.fa-solid, .fa-user{
+    margin-right: 5px;
+}
+#mail i {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+#instagram i{
+    font-size: 24px;
+    margin-right: 15px;
+}
+#map i{
+    font-size: 24px;
+}
+
+
+/* Media queries for mobile devices */
+/* styles inside this media query will be applied only when the width of the viewport is 600 pixels or less. */
+@media only screen and (max-width: 600px) {
+    /* .navbar {
+        padding: 5px;
+    } */
+    .menu{
+        height: 30px;
+    }
+    .logo img {
+        max-width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 0px;
+    }
+    .menu{
+        /* border: 1px solid red; */
+        padding: 0%;
+        gap: 0%;
+    }
+    .menu>li>a{
+        font-size: 15px;
+        /* border: 1px solid blue; */
+    }
+    .eventFunction{
+        /* background-image: url('https://images.pexels.com/photos/11285444/pexels-photo-11285444.png?auto=compress&cs=tinysrgb&w=600'); */
+        margin-top: 4%;
+        /* border: 1px solid red;. */
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 4 columns with equal width */
+        grid-template-rows: auto auto; /* 2 rows with height determined by content */
+        gap: 10px; /* Gap between grid items */
+    }
+    .eventFunction>div img:hover{
+        width: 80%;
+    }
+}
+
+
+
+/* Media queries for tablet devices */
+/* applied only when the screen width is between 601 pixels and 1024 pixels.  */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .navbar{
+        width: 100%;
+    }
+    .navbar img {
+        max-width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 0px;
+    }
+    .menu {
+        height: 30px;
+    }
+    .eventFunction{
+        /* background-image: url('https://images.pexels.com/photos/11285444/pexels-photo-11285444.png?auto=compress&cs=tinysrgb&w=600'); */
+        margin-top: 4%;
+        /* border: 1px solid red;. */
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 columns with equal width */
+        grid-template-rows: auto auto; /* 2 rows with height determined by content */
+        gap: 10px; /* Gap between grid items */
+    }
+    eventFunction>div img:hover{
+        width: 80%;
+    }
+
+}   
