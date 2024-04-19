@@ -105,6 +105,8 @@
     width: 50%;
     line-height: 25px;
     /* border: 5px soild blue; */
+    margin: auto;
+    /* margin chahnges for now  */
 }
 #about_text>p{
     width: 95%;

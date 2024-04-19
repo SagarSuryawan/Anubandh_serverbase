@@ -115,9 +115,14 @@
     line-height: 30px;
     width: 80%;
     /* color: #29034d; */
-    color: rgb(65, 5, 15);
-    font-weight: 600;
+    color: rgb(17, 16, 17);
+    font-weight:900;
     
+}
+.flippable-div .back>p{
+    color: black(255, 250, 250);
+    
+   
 }
 
 .flippable-div .front {
@@ -159,6 +164,7 @@
     color: #03044d;
     font-weight: 600;
     margin: auto;
+    text-align: center;
 }
 .event{
     /* border: 1px solid black; */
