@@ -108,7 +108,7 @@
 }
 .facilitiesdiv>div{
     height: auto;
-    /* border: 2px solid black; */
+    /* border: 2px solid yellow; */
     width: fit-content;
     display: grid;
     gap: 1%;
@@ -118,11 +118,17 @@
     
 }
 .facilitiesdiv>div img{
-    width: 70%;
+    width: 70%; /* Set a fixed width */
+    height: 80%; /* Set a fixed height */
+    /* border: 1px solid black; */
     border-radius: 5%;
     margin: auto;
     transition: width 0.3s;
 }
+/* .facilitiesdiv>div>img:nth-child(1){
+    width: 70%;
+    height: 50%;
+} */
 .facilitiesdiv>div h4{
     text-align: center;
     width: 250px;
