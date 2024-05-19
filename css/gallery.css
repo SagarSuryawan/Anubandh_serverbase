@@ -132,7 +132,8 @@ main{
 }
 
 .gallery-image {
-    width: 150px;
+    width:80%;
+    height: 80%;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.5s;
